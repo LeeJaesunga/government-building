@@ -1,0 +1,376 @@
+#body {
+    background: #1d262e;
+}
+
+.body__container {
+}
+
+#header {
+   position: relative;
+    background: #fff;
+
+}
+
+#header .header_inner {
+   display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 72px;
+
+}
+
+#header .logo {
+    position: absolute;
+    background: url("./img/logo.png") no-repeat;
+    height: 57px;
+    width: 202px;
+   
+}
+
+#header nav {
+padding-left: 256px;
+}
+
+#header nav ul {
+    display: flex;
+}
+
+#header nav ul li  {
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 90px;
+}
+
+#header nav ul li:last-child {
+  margin-right: 30px;
+}
+
+#header nav ul li span {
+
+}
+
+#header .util {
+    
+}
+
+#header .util ul{
+    display: flex;
+}
+
+#header .util_1 {
+   border-radius: 50%;
+    border: 1px solid #999;
+    width: 43px;
+    height: 43px;
+    text-align: center;
+}
+
+#header .util_1 a {
+    color: #555;
+    font-size: 15px;
+    line-height: 39px;
+    font-weight: 400;
+}
+
+#header .totalsearch {
+    position: relative;
+    margin-left: 12px;
+    background: #eee;
+   border-top-right-radius: 30px;
+     width: 193px;
+    height: 43px;
+}
+
+#header input {
+    background: transparent;
+    line-height: 44px;
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+#header button {
+    background:#003668 url("./img/btn_search.png")  no-repeat center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 54px;
+   height: 44px;
+    color: transparent;
+    border-radius: 50% 50% 0% 50%;
+}
+
+#header .util2 a{
+    background:#2da9e1 url("./img/btn_sitemap.png")no-repeat center;
+    position: absolute;
+    left: 0;
+    top: 0;
+     color: transparent;
+    border-radius: 38% 50% 50% 0%;
+}
+
+
+/* main */
+
+#main {
+     width: 100vw;                
+    min-height: 100vh;              
+    padding: 45px 0;                
+    overflow: hidden;                
+    margin: 0;                     
+    position: relative;           
+}
+
+#main img {
+    width: 100%;                      
+    height: 100%;                     
+    object-fit: cover;                
+    position: absolute;       
+    top: 0;
+    left: 0;
+}
+
+#main .main_inner {
+    position: relative;
+}
+
+#main .main_container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
+
+#main .main_container2 {
+    display: flex;
+}
+
+#main .mc_box1 {
+    background: #003668;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 301px;
+    height: 368px;
+}
+
+#main .mc_box1 h2 {
+    line-height: 60px;
+    color: #fff;
+    background: #002649;
+}
+
+#main .mc_box1 ul {
+    padding: 8px 4px;
+}
+
+#main .mc_box1 ul li {
+    display: inline-block;
+    vertical-align: top;
+   padding: 20px 0;
+    width: 95px;
+    text-align: center;
+    line-height: 16.8px;
+   
+}
+
+#main .mc_box1 ul li a {
+    display: block;
+    line-height: 1px;
+    color: #fff;
+   font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 600;
+}
+
+#main .icon1 {
+    background: #fff url("./img/icons1-removebg-preview.png")no-repeat;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .icon2 {
+    background: #fff url("./img/icons1-removebg-preview\ \(1\).png")no-repeat top;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .icon3 {
+    background: #fff url("./img/icons1-removebg-preview\ \(2\).png")no-repeat  top right;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .icon4 {
+    background: #fff url("./img/icons1-removebg-preview\ \(3\).png")no-repeat left bottom;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .icon5 {
+    background: #fff url("./img/icons1-removebg-preview\ \(4\).png")no-repeat bottom;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .icon6 {
+    background: #fff url("./img/icons1-removebg-preview\ \(5\).png")no-repeat right bottom;
+    display: block;
+    margin: 0 auto 8px;
+    width: 52px;
+    height: 52px;
+    background-size: auto 104px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#main .mc_box2 {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    width: calc(100% - 568px);
+    height: 365px;
+}
+
+#main .notice {
+    position: relative;
+    height: 100%;
+    text-align: center;
+}
+
+#main .notice h2 {
+    width: 16%;
+    height: 10%;
+}
+
+#main .notice h2 a {
+    display: block;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 14.6px;
+    color: #777;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #bacad8;
+    overflow: hidden;
+}
+
+#main .notice h2 a .active {
+    line-height: 2rem;
+    color: #fff;
+    background: #0076D1;
+}
+
+#main .notice h2:nth-of-type(1) a {
+    border-radius: 1rem 0 0 1rem;
+}
+
+#main .notice .lstbox.active {
+    display: block;
+}
+
+#main .lstbox {
+position: absolute;
+top: 48px; 
+display: none;
+padding: 12px 24px; 
+width: 83%;
+height: 300px;
+background: #fff;
+border-radius: 15px;
+}
+
+#main .lst {
+    overflow: hidden;
+}
+
+#main .lstbox .lst li a {
+    position: relative;
+    display: block;
+    padding-right: 64px;    
+   width: 93%;
+    height: 36px;           
+    line-height: 36px; 
+    text-align: left;
+    color: #333;
+    overflow: hidden;
+}
+
+#main .lstbox .lst li a strong {
+    display: block;
+    font-size: 14.4px;     
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+#main .lstbox .lst li a strong em {
+    display: inline-block;
+    margin-right: 8px;         
+    width: 48px;               
+    line-height: 18.4px;       
+    text-align: center;
+    font-size: 11.2px;         
+    border: 1px solid;
+    border-radius: 10px;     
+}
+
+#main .notice .code04 {
+    color: #098b99;
+}
+
+#main .notice .lstbox .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3.5rem;
+    font-size: 0.7rem;
+}
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
