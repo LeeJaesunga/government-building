@@ -480,11 +480,12 @@ main .lstbox .lst li a span {
     position: relative;
     padding: 0px 50px;
     top: 16px;
+    max-width: 1400px;
 }
 
 #main .main_container4 {
     position: relative;
-    height: 332px;
+    height: 412px;
     border-radius: 10px;
     overflow: hidden;
     z-index: 1;
@@ -492,6 +493,116 @@ main .lstbox .lst li a span {
     width: 100%;
     max-width: 1400px;
 }
+
+#main .bx_view {
+    max-width: 100%;
+}
+
+#main .bx_view2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 410px;
+}
+
+#main .bx_view2 ul {
+    width: auto;
+    position: relative;
+}
+
+#main .bx_view2 ul li {
+    float: none;
+    list-style: none;
+    position: absolute;
+    width: 1400px;
+    z-index: 50;
+    display: block;
+}
+
+#main .picture {
+    width: 60%;
+    float: right;
+    overflow: hidden;
+}
+
+#main .picture img {
+    position: relative;
+}
+
+#main .info {
+    padding: 42px;
+    width: 34%;
+    height: 321px;
+    text-align: left;
+    float: left;
+    background: #fff;
+    
+}
+
+#main .info h3 {
+    opacity: 1;
+    display: inline-block;
+    padding-right: 19.2px;
+    line-height: 40px;
+    font-size: 25.6px;
+    font-weight: 400;
+    color: #000; 
+    background: url("./img/bg3\ \(1\).png") no-repeat right center;;
+}
+
+#main .info h3 em {
+    color: #0076D1;
+}
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
+
+#main
 
 #main
 
