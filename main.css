@@ -149,13 +149,14 @@ padding-left: 256px;
 
 #main .main_inner {
     position: relative;
+     padding: 0px 50px;
 }
 
 #main .main_container {
     margin: 0 auto;
     width: 100%;
     max-width: 1400px;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
 }
 
 #main .main_container2 {
@@ -204,9 +205,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview.png")no-repeat;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -215,9 +216,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview\ \(1\).png")no-repeat top;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -226,9 +227,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview\ \(2\).png")no-repeat  top right;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -237,9 +238,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview\ \(3\).png")no-repeat left bottom;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -248,9 +249,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview\ \(4\).png")no-repeat bottom;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -259,9 +260,9 @@ padding-left: 256px;
     background: #fff url("./img/icons1-removebg-preview\ \(5\).png")no-repeat right bottom;
     display: block;
     margin: 0 auto 8px;
-    width: 52px;
-    height: 52px;
-    background-size: auto 104px;
+    width: 64px;
+    height: 62px;
+    /* background-size: auto 104px; */
     border-radius: 50%;
     overflow: hidden;
 }
@@ -328,7 +329,7 @@ padding-left: 256px;
     top: 59px;
     display: none;
     padding: 12px 24px;
-    width: 88%;
+    width: 91%;
     height: 286px;
     background: #fff;
     border-radius: 15px;
@@ -419,6 +420,7 @@ main .lstbox .lst li a span {
    width: 100%;
     height: 100%;
    background: #eee;
+   margin-left: 20px;
 }
 
 #main .popup {
@@ -474,9 +476,22 @@ main .lstbox .lst li a span {
     object-fit: cover; 
 }
 
-#main
+#main .main_inner2 {
+    position: relative;
+    padding: 0px 50px;
+    top: 16px;
+}
 
-#main
+#main .main_container4 {
+    position: relative;
+    height: 332px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
 
 #main
 
