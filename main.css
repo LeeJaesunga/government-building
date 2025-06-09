@@ -132,7 +132,8 @@ padding-left: 256px;
    min-width: 1158px;
     /* width: 100vw; */
     min-height: 100vh;
-    padding: 45px 0;
+    /* padding: 45px 0; */
+    padding-top: 45px;
     overflow: hidden;
     margin: 0;
     position: relative;   
@@ -342,14 +343,25 @@ padding-left: 256px;
 
 #main .lstbox .lst li a {
    position: relative;
-    display: block;
-    padding-right: 64px;
-    width: 90%;
-    height: 47px;
-    line-height: 36px;
-    text-align: left;
+   display: block;
+   padding-right: 80px;  
+   width: 90%;
+   height: 47px;
+   line-height: 47px;  
+   text-align: left;
+   color: #333;
+   overflow: hidden;
+}
+
+#main .lstbox .lst li a span.data {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    width: 69px;
+    font-size: 13px;
+    font-weight: 600;
     color: #333;
-    overflow: hidden;
+    transform: translateY(-50%);  
 }
 
 #main .lstbox .lst li a strong {
@@ -480,7 +492,8 @@ main .lstbox .lst li a span {
     position: relative;
     padding: 0px 50px;
     top: 16px;
-    max-width: 1400px;
+    /* margin-left: 200px;
+    max-width: 1400px; */
 }
 
 #main .main_container4 {
@@ -510,7 +523,7 @@ main .lstbox .lst li a span {
     position: relative;
 }
 
-#main .bx_view2 ul li {
+#main .bx_view2 > ul > li {
     float: none;
     list-style: none;
     position: absolute;
@@ -520,7 +533,9 @@ main .lstbox .lst li a span {
 }
 
 #main .picture {
-    width: 60%;
+    width: 811px;
+    height: 406px;
+    padding-right: 28px;
     float: right;
     overflow: hidden;
 }
@@ -543,66 +558,350 @@ main .lstbox .lst li a span {
     opacity: 1;
     display: inline-block;
     padding-right: 19.2px;
-    line-height: 40px;
-    font-size: 25.6px;
+    line-height: 74px;
+    font-size: 32.6px;
     font-weight: 400;
     color: #000; 
     background: url("./img/bg3\ \(1\).png") no-repeat right center;;
+}
+
+#main .info p {
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 #main .info h3 em {
     color: #0076D1;
 }
 
-#main
+#main .bx_view2 .chsa_1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 16px;
+     overflow: hidden;
+}
 
-#main
+#main .bx_view2 .chsa_1 li {
+    position: static !important;   /* absolute 무효화 */
+    float: none !important;        /* float 무효화 */
+    margin: 7px 0;
+    width: 50%;
+}
 
-#main
+#main .bx_view2 .chsa_1 li a {
+    position: relative;
+    display: block;
+    padding-left: 48px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: 300;
+    font-size: 15px;
 
-#main
+}
 
-#main
+#main .bx_view2 .chsa_1 .icon3_icon1 {
+    background: url("./img/icons3.png")no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    vertical-align: middle;
+    background-size: auto 82px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#main
+#main .bx_view2 .chsa_1 .icon3_icon2 {
+    background: url("./img/icons3.png")no-repeat;
+    background-position: -42px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    vertical-align: middle;
+    background-size: auto 82px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#main
+#main .bx_view2 .chsa_1 .icon3_icon3 {
+    background: url("./img/icons3.png")no-repeat;
+    background-position: -83px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    vertical-align: middle;
+    background-size: auto 82px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#main
+#main .bx_view2 .chsa_1 .icon3_icon4 {
+    background: url("./img/icons3.png")no-repeat;
+    background-position: -124px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+   width: 40px;
+    height: 41px;
+    vertical-align: middle;
+    background-size: auto 82px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#main
+#main .bx_view2 .chsa_1 .icon3_icon5 {
+    background: url("./img/icons3.png")no-repeat;
+    background-position: -164px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 40px;
+    height: 41px;
+    vertical-align: middle;
+    background-size: auto 82px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-#main
+#main .Bottom_button {
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    width: 60%;
+    height: 44px;
+    white-space: nowrap;
+    overflow: hidden;
+    z-index: 51;
+}
 
-#main
+#main .Bottom_button2 {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: none;
+    direction: ltr;
+}
 
-#main
+#main .Bottom_button3 {
 
-#main
+}
 
-#main
+#main .Bottom_button3 p {
+    display: inline-block;
+    margin-left: -1px;
+}
 
-#main
+#main .Bottom_button3 p a {
+    display: block;
+    width: 61px;
+    height: 44px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
 
-#main
+#main .footer {
+    position: relative;
+    color: #fff;
+    background: #1d262e;
+    margin-top: 52px;
+    height: auto;
+    min-height: 227px;
+}
 
-#main
+#main .footer::before {
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
 
-#main
+#main .footer_container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 50px;
+}
 
-#main
+#main .footer_container p {
 
-#main
+}
 
-#main
+#main .footer_container p a {
+    line-height: 48px;
+    display: inline-block;
+}
 
-#main
+#main .footer_container p a + a {
+    position: relative;
+    margin-left: 24px;
+    padding-left: 24px;
+}
 
-#main
+#main .footer_strong1 {
+    color: #b2e2ff;
+    font: inherit;
+}
 
-#main
+#main .footer_strong2 {
+      color: #fff;
+      margin-left: 24px;
+    padding-left: 24px;
+}
 
-#main
+#main .footer_strong2::after {
+    content: "";
+    position: absolute;
+    top: 17.6px;
+    left: 160px;
+    width: 1px;
+    height: 14.4px;
+    background: #656d74;
+}
 
-#main
+#main .btnss {
+    top: 5px;
+    position: absolute;
+    right: 67px;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+#main .btnss li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main .btnss li:nth-of-type(1) {
+    margin-left: 0;
+}
+ 
+#main .btnss .icons_icon1 {
+ background:#6b6b6b url("./img/icons.png")no-repeat;
+ background-position: 0 0;
+ width: 41px;
+height: 41px;
+margin-right: 8px;
+background-size: auto 41px;
+border-radius: 50%;
+overflow: hidden;
+display: inline-block;
+}
+
+#main .btnss .icons_icon2 {
+    background: #6b6b6b url("./img/icons.png")no-repeat;
+    background-position: -42px 0;
+   width: 41px;
+    height: 41px;
+    margin-right: 8px;
+    background-size: auto 41px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#main .btnss .icons_icon3 {
+    background: #6b6b6b url("./img/icons.png")no-repeat;
+    background-position: -82px 0;
+    width: 41px;
+    height: 41px;
+    margin-right: 8px;
+    background-size: auto 41px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#main .btnss .icons_icon4 {
+    background: #6b6b6b url("./img/icons.png")no-repeat;
+   background-position: -122px 0;
+    width: 41px;
+    height: 41px;
+    margin-right: 8px;
+    background-size: auto 41px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#main .btnss .icons_icon5 {
+    background: #6b6b6b url("./img/icons.png")no-repeat;
+    background-position: -163px 0;
+    width: 41px;
+    height: 41px;
+    margin-right: 8px;
+    background-size: auto 41px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#main .footer_info {
+    position: relative;
+    padding: 16px 0 32px;
+    min-height: 48px;
+}
+
+#main .footer_info address {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#main .copy_address {
+color: #c0c0c0;
+ margin-top: 8px;
+font-size: 15px;
+}
+
+#main .footerlogo {
+    display: flex;
+   gap: 234px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    align-items: center;
+    width: auto;
+}
+
+#main .footerlogoimg {
+    display: block;
+    width: 143px;
+    height: 70px;
+    object-fit: contain;
+    margin-left: -150px;
+}
+
+#main .footerlogoimg2 {
+    display: block;
+    width: 123px;
+    height: auto;
+    object-fit: contain;
+}
 
