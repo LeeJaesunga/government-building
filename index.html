@@ -10,6 +10,7 @@
 <body>
     <div class="body__container">
         <div id="header">
+
             <div class="header_inner">
                 <h1 class="logo"><a href="#"></a></h1>
 
@@ -44,6 +45,24 @@
                </div>
             </div>
         </div>
+
+         <div class="fixed">
+                <a href="">
+                    <h3>POPUP</h3>
+                    <P>1건</P>
+                </a>
+                <input type="hidden">
+            </div>
+
+            <div class="add_fixed">
+                <div class="resve_fixed">
+                    <a href="" class="resvebtn"><h3>예약신청</h3></a>
+                    <a href=""><span class="icon124"></span><p>정부청사<br>방문예약</p></a>
+                    <a href=""><span class="icon125"></span><p>옥상정원<br>세종</p></a>
+                    <a href=""><span class="icon126"></span><p>전시관<br>대전</p></a>
+                    <a href=""><span class="icon127"></span><p>열린<br>만남터<br>대전</p></a>
+                </div>
+            </div>
 
 
         <!-- main -->
@@ -193,5 +212,59 @@
          </div>
 
     </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('#main .bx_viewport ul.lst');
+    const slides = slider.querySelectorAll('li');
+    let currentIndex = 0;
+    const slideCount = slides.length;
+
+    function getSlideWidth() {
+        return slider.clientWidth; // 반응형일 때 li 너비가 100%라 가정
+    }
+
+    function moveSlide(index, slideWidth) {
+        const offset = -slideWidth * index;
+        slider.style.transform = `translate3d(${offset}px, 0, 0)`;
+        slider.style.transition = 'transform 0.5s ease';
+    }
+
+    function autoSlide() {
+        const slideWidth = getSlideWidth();
+        currentIndex = (currentIndex + 1) % slideCount;
+        moveSlide(currentIndex, slideWidth);
+    }
+
+    // 초기 슬라이드 너비
+    let slideWidth = getSlideWidth();
+
+    // 반응형 & 일반 모드 구분 - 화면 너비 기준 예시
+    function checkModeAndSlide() {
+        const windowWidth = window.innerWidth;
+        if (windowWidth <= 1024) {
+            // 반응형 모드: 너비 계산해서 이동
+            slideWidth = getSlideWidth();
+            moveSlide(currentIndex, slideWidth);
+        } else {
+            // 일반 모드: 고정 width 사용 (예: 355px)
+            slideWidth = 355;
+            moveSlide(currentIndex, slideWidth);
+        }
+    }
+
+    window.addEventListener('resize', () => {
+        checkModeAndSlide();
+    });
+
+    // 2초마다 자동 슬라이드
+    setInterval(() => {
+        autoSlide();
+    }, 2000);
+
+    // 초기 세팅
+    checkModeAndSlide();
+});
+</script>
+   
 </body>
 </html>
