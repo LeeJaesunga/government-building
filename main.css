@@ -725,9 +725,22 @@ main .lstbox .lst li a span {
 #main .bx_view2 .chsa_1 {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 16px;
+    margin-top: 23px;
+    padding: 23px 0px;
     margin-bottom: 16px;
      overflow: hidden;
+     background: url("./img/pattern02.png")repeat-x left top;;
+}
+
+#main .bx_view2 .chsa_1::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 4px;
+    background: #003668;
+    border-radius: 2px;
+    content: "";
 }
 
 #main .bx_view2 .chsa_1 li {
