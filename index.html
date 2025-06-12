@@ -126,6 +126,20 @@
                                                         <li><a href="#"><img src="./img/img_4d13d35c-99b1-43ed-ac52-9b12a9944d541607060406315.png" alt=""></a></li>
                                                     </ul>
                                                 </div>
+                                                <div class="box_controls">
+                                                    <div class="box_controls2">
+                                                        <a href="" class="bx-prev">p</a>
+                                                        <a href="" class="bx-next">n</a>
+                                                    </div>
+                                                    <div class="box_controls3">
+                                                        <div class="box_controls4">
+                                                            <a href="" class="bx-start">s</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="box-pager">
+                                                        1/4
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -215,58 +229,39 @@
 
     </div>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('#main .bx_viewport ul.lst');
-    const slides = slider.querySelectorAll('li');
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector("#main .bx_viewport .lst");
+    const slides = document.querySelectorAll("#main .bx_viewport .lst li");
+    const prevBtn = document.querySelector(".bx-prev");
+    const nextBtn = document.querySelector(".bx-next");
+    const pager = document.querySelector(".box-pager");
+
     let currentIndex = 0;
-    const slideCount = slides.length;
+    const totalSlides = slides.length;
+    const slideWidth = slides[0].offsetWidth;
 
-    function getSlideWidth() {
-        return slider.clientWidth; // 반응형일 때 li 너비가 100%라 가정
+    function updateSlider() {
+        const offset = -slideWidth * currentIndex;
+        slider.style.transform = `translateX(${offset}px)`;
+        pager.textContent = `${currentIndex + 1}/${totalSlides}`;
     }
 
-    function moveSlide(index, slideWidth) {
-        const offset = -slideWidth * index;
-        slider.style.transform = `translate3d(${offset}px, 0, 0)`;
-        slider.style.transition = 'transform 0.5s ease';
-    }
-
-    function autoSlide() {
-        const slideWidth = getSlideWidth();
-        currentIndex = (currentIndex + 1) % slideCount;
-        moveSlide(currentIndex, slideWidth);
-    }
-
-    // 초기 슬라이드 너비
-    let slideWidth = getSlideWidth();
-
-    // 반응형 & 일반 모드 구분 - 화면 너비 기준 예시
-    function checkModeAndSlide() {
-        const windowWidth = window.innerWidth;
-        if (windowWidth <= 1024) {
-            // 반응형 모드: 너비 계산해서 이동
-            slideWidth = getSlideWidth();
-            moveSlide(currentIndex, slideWidth);
-        } else {
-            // 일반 모드: 고정 width 사용 (예: 355px)
-            slideWidth = 355;
-            moveSlide(currentIndex, slideWidth);
-        }
-    }
-
-    window.addEventListener('resize', () => {
-        checkModeAndSlide();
+    nextBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlider();
     });
 
-    // 2초마다 자동 슬라이드
-    setInterval(() => {
-        autoSlide();
-    }, 2000);
+    prevBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    });
 
-    // 초기 세팅
-    checkModeAndSlide();
+    updateSlider();
 });
 </script>
+
    
 </body>
 </html>

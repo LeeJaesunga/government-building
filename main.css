@@ -635,6 +635,63 @@ main .lstbox .lst li a span {
     flex-shrink: 0;
 }
 
+#main .box_controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 44px;
+    text-align: center;
+}
+
+#main .bx-prev {
+    background:rgba(0, 0, 0, 0.5) url("./img/btn_p_prev.png") no-repeat center;
+    position: absolute;
+    left: 52px;
+    top: 0;
+    width: 50px;
+    height: 43px;
+    line-height: 36px;
+    color: transparent;
+    overflow: hidden;
+}
+
+#main .bx-next {
+    background: rgba(0, 0, 0, 0.5) url("./img/btn_p_next.png") no-repeat center;
+    position: absolute;
+    left: 154px;
+    top: 0;
+    width: 50px;
+    height: 43px; 
+    line-height: 36px;   
+    color: transparent;
+    overflow: hidden;
+  
+}
+
+#main .bx-start {
+    background: rgba(0, 0, 0, 0.5) url("./img/btn_p_play.png") no-repeat center;
+    left: 103px;    
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 43px;    
+    line-height: 36px;      
+    color: transparent;
+    overflow: hidden;
+}
+
+#main .box-pager {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 43px;             
+    font-size: 12px;
+    line-height: 36px;        
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 #main .main_inner2 {
     position: relative;
     padding: 0px 50px;
@@ -1211,38 +1268,44 @@ max-width: 800px;
 }
 
 #main .main_container3 {
-  width: 674px;
-    height: 702px;
-    margin-top: 31px;
-    margin-left: 6px;
+ width: 100%;             /* 화면 크기에 맞게 100%로 변경 */
+  max-width: 674px;        /* 최대 크기 유지 */
+  aspect-ratio: 674 / 702; /* 높이 자동 계산 (비율 유지) */
+  margin-top: 31px;
+  margin-left: 6px;
 }
 
-#main .mc_box4 {
-    width: 100%;
+#main .main_container3 {
+  width: 100%;
+  max-width: 674px;
+  aspect-ratio: 674 / 702; /* 높이 자동 비율 유지 */
+  margin-top: 31px;
+  margin-left: 6px;
+  position: relative;
+  overflow: hidden;
 }
 
+#main .mc_box4,
+#main .bx_wrapper,
 #main .bx_viewport {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-#main .bx_wrapper {
-    height: 100%;
 }
 
 #main .bx_viewport ul.lst {
   display: flex;
   width: 100%;
   height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
   transition: transform 0.5s ease-in-out;
 }
 
 #main .bx_viewport ul.lst li {
-  flex: 0 0 100%; 
+  flex: 0 0 100%;
   height: 100%;
-  list-style: none;
+  position: relative;
 }
 
 #main .bx_viewport ul.lst li a {
@@ -1254,12 +1317,8 @@ max-width: 800px;
 #main .bx_viewport ul.lst li a img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: contain; /* contain으로 하면 이미지 전체 노출, cover는 짤림 있음 */
   display: block;
-}
-
-#main .bx_viewport ul li {
-
 }
 
 #main .main_inner2 {
