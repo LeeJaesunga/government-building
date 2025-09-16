@@ -12,7 +12,7 @@ body, html {
 } */
 
 .body__container {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #header {
@@ -490,13 +490,14 @@ padding-left: 256px;
 
 #main .lstbox .lst li a span.data {
     position: absolute;
-    top: 50%;
-    right: 8px;
-    width: 69px;
+    top: 52%;
+    right: -10px;
+    width: 82px;
+    /* height: 26px; */
     font-size: 13px;
     font-weight: 600;
     color: #333;
-    transform: translateY(-50%);  
+    transform: translateY(-50%);
 }
 
 #main .lstbox .lst li a strong {
